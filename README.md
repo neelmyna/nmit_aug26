@@ -34,3 +34,32 @@ j--;
 a[i] = b[j];
 b[j]--;
 a[++i] = b[--j]--;
+
+float numbers[20];
+
+float numbers[] = new float[size];
+
+### Why index starts from zero
+numbers[2] 
+*(numbers + 2) //numbers which name of the array is address of 1st element, and "+ 2" means jump 2 elements further. Lastly, uanry * is value at opetator. NOTE: This syntax is available to use only in C/C++ but this is how/what is implemented in all languages.
+
+---
+input_size = int(input("Enter sie of the Array: "))
+
+diameters = list() # []
+print(f'Enter diameters of {input_size} Oranges: ')
+for i in range(input_size):
+    print(i)
+    i += 2
+
+
+[10, 20]
+number >= 10 and number <= 20
+number > 9 and number < 21
+(5, 35)
+number > 5 and number < 35
+[3, 60)
+
+for(int i = 1; i < 11; i++)
+for(int i = 1; i <= 10; i++)
+---
