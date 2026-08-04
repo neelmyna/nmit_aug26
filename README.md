@@ -1,33 +1,37 @@
 # nmit_aug26
-This repo is created for the infy specific interview placement training for MCA of NMIT Bengaluru
----
+
+## This repo is created for the infy specific interview placement training for MCA of NMIT Bengaluru
+
 ## STEPS TO SOLVE A PROBLEM
 
 ### 1. Understand The Problem
+
 Know what exactly the I/P is/are. What is the O/P. And the relevant information.
 
 ### 2. Find the Solution
+
 Find the solution Mathematically or using trial and error method or using some specific formula or algorithm.
 
 ### 3. Write the Algorithm
+
 Build the solution using step by step procedure.
 Each step Must be simple, atomic, unambigious and finite.
 
 ### 4. Write the Fake Code
+
 Writing pesudocode is necessary because we can apply SRP. We can focus only on the solution without having to worry about the syntax.
 
 ### 5. Flowchart, Find Efficiency and Optimize
+
 For the given solution, for a given sample I/P, the time taken or the space required may vary. Thus the I/P data might lead to arriving at the O/P faster or may be slower. Thus you definitely have at least 2 efficiencues namely, best and worst.
 
 ### 6. Code it!
+
 Implement the solution in a specific language/syntax.
 
 ### 7. Development
+
 Unit testing, documentation, good coding practices, naming standards....
-
-
-
-
 
 i++;
 j--;
@@ -40,18 +44,19 @@ float numbers[20];
 float numbers[] = new float[size];
 
 ### Why index starts from zero
-numbers[2] 
-*(numbers + 2) //numbers which name of the array is address of 1st element, and "+ 2" means jump 2 elements further. Lastly, uanry * is value at opetator. NOTE: This syntax is available to use only in C/C++ but this is how/what is implemented in all languages.
+
+numbers[2]
+_(numbers + 2) //numbers which name of the array is address of 1st element, and "+ 2" means jump 2 elements further. Lastly, uanry _ is value at opetator. NOTE: This syntax is available to use only in C/C++ but this is how/what is implemented in all languages.
 
 ---
+
 input_size = int(input("Enter sie of the Array: "))
 
 diameters = list() # []
 print(f'Enter diameters of {input_size} Oranges: ')
 for i in range(input_size):
-    print(i)
-    i += 2
-
+print(i)
+i += 2
 
 [10, 20]
 number >= 10 and number <= 20
@@ -62,4 +67,20 @@ number > 5 and number < 35
 
 for(int i = 1; i < 11; i++)
 for(int i = 1; i <= 10; i++)
+
+---
+
+## P-Element Problem:
+
+```
+Array Size: N
+Read numbers[N]
+Read X, Y  such that X+ Y = N
+
+Solution:
+Sort numbers
+P = numbers[y] - numbers[y-1] - 1
+print P as result
+```
+
 ---
