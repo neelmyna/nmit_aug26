@@ -1,6 +1,6 @@
 ```
 i = last valid element in nums1
-j = last element in nums2
+j = last index in nums2
 k = last index of nums1 (n+m-1)
 
 While i >= 0 and j >= 0
