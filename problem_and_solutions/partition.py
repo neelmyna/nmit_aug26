@@ -1,3 +1,7 @@
+import pdb
+
+pdb.set_trace()
+
 def partition_array(diameters):
     pivot = diameters[-1]
     k = 0
