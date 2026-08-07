@@ -129,6 +129,9 @@ return instk.empty() AND outstk.empty()
 
 ## 2 Lists Converge or Not!
 
+if head1 == None or head2 == None:"
+return False
+
 ptrA = head1 #Point to 1st list
 ptr2 = head2 #Point to 2nd list
 
@@ -148,3 +151,35 @@ return ptrA
 create list1()
 create list2()
 check_if_converge()
+
+---
+
+def converges(head1, head2) -> bool:
+    p1 = head1
+    p2 = head2
+    if head1 == None or head2 == None:
+        return False
+    while p1.next != None or p2.next != None:
+        if p1.next != None:
+            p1 = p1.next
+        if p2.next != None:
+            p2 = p2.next
+    
+    if p1 == p2:
+        return True
+    return False
+
+def converges(head1, head2) -> bool:
+    p1 = head1
+    p2 = head2
+
+    list_nodes = set()
+    # add all nodes of list1 to set
+    while p1 != None:
+        list_nodes.add(p1)
+        p1 = p1.next
+    
+    while p2 != None:
+        if list_nodes has p2:
+            return True
+    return False
