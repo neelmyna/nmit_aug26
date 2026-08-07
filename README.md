@@ -84,3 +84,22 @@ print P as result
 ```
 
 ---
+DAY3 FRIDAY 07-08-2026
+
+LeetCode Problem #20
+
+Read InputString
+stk = empty()  # take a empty list(Stack)
+For each char in in InputString do: 
+    If char is '(' or  '[' or '{' then:
+        stk.push(ch)
+    Else # Thechar is mostly a closing bracket
+        If stack.empty() # so you have more closing brackets than opening
+            Return false  # Hence return false
+        top = stk.pop() # if the char is matching pair
+        If top == '(' and ch != ')' # IF the opening and closing brackets are different
+           top == '[' and ch != ']'
+           top == '{' and ch != '}'
+            return false
+Return stack.empty() # If the Stack still has characters in it (which is the extra opening brackets), return false. If the Stack is empty then everything has gone fine! Hence return true.
+---
