@@ -183,3 +183,33 @@ def converges(head1, head2) -> bool:
         if list_nodes has p2:
             return True
     return False
+
+i = -1
+i -= -1
+print(i)
+
+result = 1 ** 2 ** 3 ** 3
+print(result)
+
+num = 25
+while num <= 50:
+    print(num)
+    num += 7
+else:
+    print(10)
+
+s1 = 'bengaluru'
+s2 = 'ooru'
+print(s1.index(s2, 1))
+print(s1.find(s2, 0, 20))
+
+s1 = 'bengaluru'
+s2 = 'ooru'
+try
+    print(s1.index(s2, 1))
+    print(s1.find(s2, 0, 20))
+except exception as e:
+    print(e)
+except ValueError as ve:
+    print(e)
+print('Afterwards')
