@@ -126,3 +126,25 @@ Empty()
 return instk.empty() AND outstk.empty()
 
 ---
+
+## 2 Lists Converge or Not!
+
+ptrA = head1 #Point to 1st list
+ptr2 = head2 #Point to 2nd list
+
+while ptrA != ptr2:
+if ptrA == None: #if list1 exhausts
+ptrA = head2
+else:
+ptrA = ptrA.next
+if ptrB == None: #if list2 exhausts
+ptrB = head1
+else:
+ptrB = ptrB.next
+return ptrA
+
+# When loop breaks, either ptrA and ptrB point to the node of conversion, else both are None
+
+create list1()
+create list2()
+check_if_converge()
